@@ -1,7 +1,6 @@
-import React from "react";
-import Image from "next/image";
+"use client";
 
-const Home = () => {
+export default function HomeClient() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <section
@@ -18,59 +17,42 @@ const Home = () => {
           </button>
         </div>
       </section>
-
       <section className="services py-16">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-center">Nos Services</h2>
           <div className="grid grid-cols-3 gap-4 mt-8">
             <div className="service-item p-4">
               <h3 className="text-xl font-bold">Web Design</h3>
-              <p>
-                Des conceptions web personnalisées pour répondre à vos besoins.
-              </p>
+              <p>Custom web designs to suit your needs.</p>
               <a href="#" className="text-blue-500">
-                En savoir plus
+                Read More
               </a>
             </div>
             <div className="service-item p-4">
-              <h3 className="text-xl font-bold">Support Personnalisé</h3>
-              <p>Un support dédié pour votre entreprise.</p>
+              <h3 className="text-xl font-bold">Personalized Support</h3>
+              <p>Dedicated support for your business.</p>
               <a href="#" className="text-blue-500">
-                En savoir plus
+                Read More
               </a>
             </div>
             <div className="service-item p-4">
-              <h3 className="text-xl font-bold">
-                Subventions Gouvernementales
-              </h3>
-              <p>Des opportunités pour votre entreprise.</p>
+              <h3 className="text-xl font-bold">Government Subsidies</h3>
+              <p>Opportunities for your business.</p>
               <a href="#" className="text-blue-500">
-                En savoir plus
+                Read More
               </a>
             </div>
           </div>
         </div>
       </section>
-
       <section className="testimonials py-16 bg-gray-100">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-center">Témoignages</h2>
           <div className="testimonials-slider mt-8">
-            <div className="testimonial-item p-4">
-              <p>"Service exceptionnel et résultats incroyables!"</p>
-              <p>- John Doe, ABC Company</p>
-            </div>
-            <div className="testimonial-item p-4">
-              <p>
-                "Nous avons augmenté notre visibilité en ligne grâce à leur
-                expertise."
-              </p>
-              <p>- Jane Smith, XYZ Inc.</p>
-            </div>
+            {/* Slider Component */}
           </div>
         </div>
       </section>
-
       <section className="blog py-16">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-center">Blogs</h2>
@@ -107,7 +89,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="contact py-16 bg-gray-100">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-center">Contactez-Nous</h2>
@@ -167,6 +148,4 @@ const Home = () => {
       </section>
     </main>
   );
-};
-
-export default Home;
+}
